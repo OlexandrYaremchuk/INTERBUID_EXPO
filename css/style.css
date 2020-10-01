@@ -1,0 +1,553 @@
+﻿/* html5doctor.com Reset v1.6.1 - http://cssreset.com */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle;padding: 0;margin: 0;}
+
+*{
+    font-family: Arial, Helvetica, Garuda, sans-serif;
+}
+
+html {
+    overflow: auto;
+}
+
+body{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 1024px;
+    height: 768px;
+    margin-left: -512px;
+    margin-top: -384px;
+    /*background color defined in color.css*/
+    line-height: 120%;
+    /*border: 1px solid grey;*/
+    overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+    body{
+        left:0;
+        margin-left: 0;
+    }
+}
+@media (max-height: 768px) {
+    body{
+        top:0;
+        margin-top: 0;
+    }
+}
+
+
+.topbar_1 {
+    background-color: #BD1823;
+    width: 361px;
+    height: 45px;
+    transform: rotate(6deg);
+    -ms-transform: rotate(6deg);
+    position: absolute;
+    left: 0;
+    top: -26px;
+    z-index:500;
+	display: none;
+}
+.topbar_2 {
+    background-color: #BD1823;
+    width: 669px;
+    height: 45px;
+    transform: rotate(-3.2deg);
+    -ms-transform: rotate(-3.2deg);
+    position: absolute;
+    right: 0;
+    top: -26px;
+    z-index:500;
+	display: none;
+}
+
+.topbar_3 {
+    background-color: #BD1823;
+    width: 875px;
+    height: 70px;
+    transform: rotate(-4.4deg);
+    -ms-transform: rotate(-4.46deg);
+    position: absolute;
+    left: 0;
+    bottom: -36px;
+    z-index:500;
+	display: none;
+}
+.topbar_4 {
+    background-color: #BD1823;
+    width: 175px;
+    height: 70px;
+    transform: rotate(24deg);
+    -ms-transform: rotate(24deg);
+    position: absolute;
+    right: 0;
+    bottom: -35px;
+    z-index:500;
+	display: none;
+}
+
+.lefbar_1 {
+    background-color: #993c87;
+    width: 280px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 400;
+}
+
+.lefbar_2 {
+    background: #FFFFFF url(../images/bg_body.jpg) no-repeat;
+    width: 744px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.rigbar_2 {
+    background-color: rgba(255,255,255,0.6);
+    width: 809px;
+    height: 840px;
+    transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    position: absolute;
+    right: -22px;
+    bottom: -78px;
+    z-index: 0;
+}
+
+.rigbar_1 {
+    background-color: #fff;
+    width: 77px;
+    height: 350px;
+    transform: skew(0deg, 45deg);
+    -ms-transform: skew(0deg, 45deg);
+    position: absolute;
+    right: 0;
+    top: -132px;
+    z-index:400;
+}
+
+.print_icon {
+	position: absolute;
+    top: 83px;
+    right: 21px;
+    z-index: 401;
+    width: 32px;
+}
+.back_icon {
+    position: absolute;
+    top:145px;
+    right:12px;
+    z-index: 401;
+    width: 55px;
+    opacity: .4;
+}
+
+.exhibition_logo {
+    position: absolute;
+    top: 50px;
+    left: 55px;
+    z-index: 401;
+    cursor: pointer;
+    width: 150px;
+}
+
+/* ------- start page ------ */
+.start_page {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg_body.jpg) left top no-repeat;
+    z-index: 450;
+}
+.exhibition_logo_start {
+    position: absolute;
+    top: 348px;
+    left: 507px;
+    width: 166px;
+    z-index: 8;
+}
+
+.exhibition_start{
+    position: absolute;
+    top: 135px;
+    right: 0px;
+    z-index: 0;
+}
+
+.kmkya_logo_start {
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    width: 100px;
+}
+.lang_submit {
+    display: block;
+    width: 150px;
+    height: 38px;
+    line-height: 40px;
+    font-size: 24px;
+    color: white;
+    border: none;
+    /*color defined in color.css*/
+    text-align: center;
+    cursor: pointer;
+	border-radius: 15px;
+}
+
+.lang_ua_submit_button{
+    position: absolute;
+    top: 650px;
+    left: 350px;
+}
+
+.lang_en_submit_button{
+    position: absolute;
+    top: 650px;
+    left: 550px;
+}
+
+.choose_lang{
+    position: absolute;
+	top: 600px;
+    left: 265px;
+    color: #fff;
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.radio_lang:nth-of-type(1) + label:before {
+    content: " ";
+    position: absolute;
+    top: 624px;
+    left: 414px;
+    display: block;
+    width: 37px;
+    height: 37px;
+    background: url(../images/radio-bg.svg) center center no-repeat;
+}
+.radio_lang:nth-of-type(2) + label:before {
+    content: " ";
+    position: absolute;
+    top: 624px;
+    left: 533px;
+    display: block;
+    width: 37px;
+    height: 37px;
+
+    background: url(../images/radio-bg.svg) center center no-repeat;
+}
+.radio_lang:checked + label:before {
+    background: url(../images/radio-bg.svg) center center no-repeat, url(../images/radio-selected.svg) center center no-repeat;
+}
+
+.radio_lang:nth-of-type(1) + label:after {
+    content: "Ua";
+    position: absolute;
+	top: 633px;
+    left: 467px;
+    color: #fff;
+    font-size: 21px;
+    line-height: 21px;
+}
+.radio_lang:nth-of-type(2) + label:after {
+    content: "Eng";
+    position: absolute;
+    top: 633px;
+    left: 586px;
+    color: #fff;
+    font-size: 21px;
+    line-height: 21px;
+}
+
+
+.radio_lang, .radio_lang + label {
+	position: absolute;
+    top: -20px;
+    left: 0;
+    cursor: pointer;
+}
+
+
+
+
+/* ------- search block ------ */
+.search_block {
+    position: absolute;
+    top:0;
+    right: -414px;
+    height: 101px;
+    width: 491px;
+    background-color: white;
+    z-index: 401;
+    transition: all 0.2s linear;
+}
+.search_block.slide_left{
+    right: 0;
+}
+.search_icon {
+    position: absolute;
+    top:23px;
+    left:21px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.search_icon.slide_down{
+    top:47px;
+}
+
+.search_text {
+    position: absolute;
+    top: 29px;
+    left: 81px;
+    width: 228px;
+    height: 23px;
+    border: 1px solid #b1b1b2;
+}
+.search_button{
+    position: absolute;
+    top: 29px;
+    left: 322px;
+    border: none;
+    width: 111px;
+    height: 25px;
+    color:white;
+    text-align: center;
+    line-height: 25px;
+    /* bg color defined in color.css */
+}
+.search_letters {
+    position: absolute;
+    top: 62px;
+    left: 81px;
+
+    font-size: 11px;
+    color: #727272;
+    line-height: 15px;
+
+}
+.search_letters a {
+    color: #727272;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* ------- Left menu ------- */
+.left_menu {
+    z-index:410;
+    position: absolute;
+    left: 30px;
+    top: 230px;
+}
+.left_menu > a {
+    display: block;
+    color:#fff;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 21px;
+    margin-left: 16px;
+    cursor: pointer;
+}
+.left_menu > a:hover {
+    /*color defined in color.css*/
+    font-weight: bold;
+}
+.left_menu > a:first-child, .left_menu > a:last-child, .left_menu > a:nth-last-child(2), .left_menu > a:nth-last-child(3) {
+    margin-left: 0;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: bold;
+    /*color defined in color.css*/
+    text-transform: uppercase;
+}
+
+
+/* ------- participants_list ------- */
+.participants_list {
+    position: absolute;
+    top: 73px;
+    left: 350px;
+    height: 87%;
+    width: 691px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.vertical_dotted_line {
+    position: absolute;
+    top:0;
+    left: 40px;
+    margin: 5px 0 0 0;
+    padding-bottom: 214px;
+}
+
+.vertical_dotted_line:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -1px;
+    width: 1px;
+    height: calc(100% - 214px);
+    /* border-color defined in color.css */
+    border-left-style: dashed;
+    border-left-width: 1px;
+}
+
+
+.participant {
+    display: block;
+    height: 27px;
+    line-height: 27px;
+    padding-left: 35px;
+    margin-bottom: 19px;
+    margin-left: -41px;
+    font-size: 14px;
+    /*color defined in color.css*/
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+.participant:first-child{
+    margin-top: -13px;
+}
+.participant:last-child {
+    margin-bottom: -13px;
+}
+.participant:nth-child(3n):not(:last-child) {
+    padding-bottom: 66px;
+}
+
+.participant:before {
+    content: "◆";
+    margin-right: 39px;
+    font-size: 14px;
+}
+
+.participant:after {
+    content: "◆";
+    background: url(../images/partcipant-list-bg1.svg) top left no-repeat;
+    display: block;
+    position: relative;
+    left:-35px;
+    top:-27px;
+    z-index: -1;
+    height: 27px;
+    width: 0;
+    overflow: hidden;
+    transition: all 0.2s linear;
+}
+.participant:hover:after{
+    width: 450px;
+}
+
+
+
+/* ------- participant_entry ------- */
+.participant_entry {
+    position: absolute;
+    top: 130px;
+    left: 398px;
+    overflow-y: scroll;
+    height: 77%;
+    width: 591px;
+    padding-right: 100px;
+}
+.participant_entry_hide_scroll {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 495px;
+    height: 100%;
+    color: #474B5B;
+    text-align: center;
+    font-size: 12px;
+}
+
+.participant_entry .name {
+    position: absolute;
+    top:0px;
+    left:7%;
+    width: 86%;
+    font-size: 22px;
+	line-height: 26px;
+	color: #974695;
+    /*color defined in color.css*/
+}
+.participant_entry .logo {
+    position: absolute;
+    top:22px;
+    width: 100%;
+}
+.participant_entry .logo img {
+    height: 36px;
+	margin: 33px 0 0px;
+}
+.participant_entry .address {
+    position: absolute;
+    top: 100px;		/* 226px; */
+    width: 100%;
+    line-height: 17px;
+}
+.participant_entry .phone {
+    position: absolute;
+	top: 140px;
+    width: 100%;
+    line-height: 17px;
+}
+.participant_entry .email {
+    position: absolute;
+	top:180px;
+    width: 100%;
+}
+.participant_entry .email:before {
+    content: "";
+    background: url(../images/email.png) top left no-repeat;
+}
+.participant_entry .web {
+    position: absolute;
+	top:220px;
+    width: 100%;
+}
+.participant_entry .web {
+    /*color defined in color.css*/
+}
+.participant_entry .desc {
+    position: absolute;
+	top:260px;
+    width: 100%;
+    /*background color defined in color.css*/
+    line-height: 17px;
+    font-size: 14px;
+    padding-bottom: 50px;
+}
+
+.participants_list .search_result {
+    position: absolute;
+	top:100px;
+    width: 100%;
+    /*background color defined in color.css*/
+    line-height: 17px;
+    font-size: 14px;
+    padding-bottom: 50px;
+}
+
+
+/* for print */
+@page
+{
+    /*size: auto;*/   /* auto is the initial value */
+    margin: 0 0 0 130px;  /* this affects the margin in the printer settings */
+}
+
+.fa{
+vertical-align: -5px;
+    padding-right: 5px;
+}

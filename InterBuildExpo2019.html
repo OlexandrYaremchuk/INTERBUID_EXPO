@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Catalog</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/color.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/data_uk.js"></script>
+    <script src="js/data_en.js"></script>
+</head>
+
+<body>
+
+<div class="start_page">
+    <img src="images/exhibition-logo-start.png" class="exhibition_logo_start">
+    <img src="images/kmkya-logo-start.svg" class="kmkya_logo_start">
+    <img src="images/start-bg.png" class="exhibition_start">
+
+	<div class="choose_lang">Будь ласка, оберіть мову  /  Please select a language</div>
+
+	<input type="button" value="English" class="lang_submit lang_en_submit_button">
+	<input type="button" value="Українська" class="lang_submit lang_ua_submit_button">
+
+</div>
+
+
+
+<div class="topbar_1"> </div>
+<div class="topbar_2"> </div>
+
+<div class="topbar_3"> </div>
+<div class="topbar_4"> </div>
+
+<div class="lefbar_1"> </div>
+<div class="lefbar_2"> </div>
+
+<div class="rigbar_1"> </div>
+<div class="rigbar_2"> </div>
+
+
+<div class="search_block">
+    <img src="images/search-icon.svg" class="search_icon">
+    <input type="text" class="search_text">
+    <input type="button" class="search_button" value="Search">
+
+    <div class="search_letters">
+        <A onclick="populate_partticipants_list(false,'1'); $('.search_icon').click();">0..9</A>
+        <A onclick="populate_partticipants_list(false,'A'); $('.search_icon').click();">A</A>
+        <A onclick="populate_partticipants_list(false,'B'); $('.search_icon').click();">B</A>
+        <A onclick="populate_partticipants_list(false,'C'); $('.search_icon').click();">C</A>
+        <A onclick="populate_partticipants_list(false,'D'); $('.search_icon').click();">D</A>
+        <A onclick="populate_partticipants_list(false,'E'); $('.search_icon').click();">E</A>
+        <A onclick="populate_partticipants_list(false,'F'); $('.search_icon').click();">F</A>
+        <A onclick="populate_partticipants_list(false,'G'); $('.search_icon').click();">G</A>
+        <A onclick="populate_partticipants_list(false,'H'); $('.search_icon').click();">H</A>
+        <A onclick="populate_partticipants_list(false,'I'); $('.search_icon').click();">I</A>
+        <A onclick="populate_partticipants_list(false,'J'); $('.search_icon').click();">J</A>
+        <A onclick="populate_partticipants_list(false,'K'); $('.search_icon').click();">K</A>
+        <A onclick="populate_partticipants_list(false,'L'); $('.search_icon').click();">L</A>
+        <A onclick="populate_partticipants_list(false,'M'); $('.search_icon').click();">M</A>
+        <A onclick="populate_partticipants_list(false,'N'); $('.search_icon').click();">N</A>
+        <A onclick="populate_partticipants_list(false,'O'); $('.search_icon').click();">O</A>
+        <A onclick="populate_partticipants_list(false,'P'); $('.search_icon').click();">P</A>
+        <A onclick="populate_partticipants_list(false,'Q'); $('.search_icon').click();">Q</A>
+        <A onclick="populate_partticipants_list(false,'R'); $('.search_icon').click();">R</A>
+        <A onclick="populate_partticipants_list(false,'S'); $('.search_icon').click();">S</A>
+        <A onclick="populate_partticipants_list(false,'T'); $('.search_icon').click();">T</A>
+        <A onclick="populate_partticipants_list(false,'U'); $('.search_icon').click();">U</A>
+        <A onclick="populate_partticipants_list(false,'V'); $('.search_icon').click();">V</A>
+        <A onclick="populate_partticipants_list(false,'W'); $('.search_icon').click();">W</A>
+        <A onclick="populate_partticipants_list(false,'X'); $('.search_icon').click();">X</A>
+        <A onclick="populate_partticipants_list(false,'Y'); $('.search_icon').click();">Y</A>
+        <A onclick="populate_partticipants_list(false,'Z'); $('.search_icon').click();">Z</A>
+        <br/>
+        <A onclick="populate_partticipants_list(false,'А'); $('.search_icon').click();">А</A>
+        <A onclick="populate_partticipants_list(false,'Б'); $('.search_icon').click();">Б</A>
+        <A onclick="populate_partticipants_list(false,'В'); $('.search_icon').click();">В</A>
+        <A onclick="populate_partticipants_list(false,'Г'); $('.search_icon').click();">Г</A>
+        <A onclick="populate_partticipants_list(false,'Д'); $('.search_icon').click();">Д</A>
+        <A onclick="populate_partticipants_list(false,'Е'); $('.search_icon').click();">Е</A>
+        <A onclick="populate_partticipants_list(false,'Є'); $('.search_icon').click();">Є</A>
+        <A onclick="populate_partticipants_list(false,'Ж'); $('.search_icon').click();">Ж</A>
+        <A onclick="populate_partticipants_list(false,'З'); $('.search_icon').click();">З</A>
+        <A onclick="populate_partticipants_list(false,'И'); $('.search_icon').click();">И</A>
+        <A onclick="populate_partticipants_list(false,'І'); $('.search_icon').click();">І</A>
+        <A onclick="populate_partticipants_list(false,'Ї'); $('.search_icon').click();">Ї</A>
+        <A onclick="populate_partticipants_list(false,'Й'); $('.search_icon').click();">Й</A>
+        <A onclick="populate_partticipants_list(false,'К'); $('.search_icon').click();">К</A>
+        <A onclick="populate_partticipants_list(false,'Л'); $('.search_icon').click();">Л</A>
+        <A onclick="populate_partticipants_list(false,'М'); $('.search_icon').click();">М</A>
+        <A onclick="populate_partticipants_list(false,'Н'); $('.search_icon').click();">Н</A>
+        <A onclick="populate_partticipants_list(false,'О'); $('.search_icon').click();">О</A>
+        <A onclick="populate_partticipants_list(false,'П'); $('.search_icon').click();">П</A>
+        <A onclick="populate_partticipants_list(false,'Р'); $('.search_icon').click();">Р</A>
+        <A onclick="populate_partticipants_list(false,'С'); $('.search_icon').click();">С</A>
+        <A onclick="populate_partticipants_list(false,'Т'); $('.search_icon').click();">Т</A>
+        <A onclick="populate_partticipants_list(false,'У'); $('.search_icon').click();">У</A>
+        <A onclick="populate_partticipants_list(false,'Ф'); $('.search_icon').click();">Ф</A>
+        <A onclick="populate_partticipants_list(false,'Х'); $('.search_icon').click();">Х</A>
+        <A onclick="populate_partticipants_list(false,'Ц'); $('.search_icon').click();">Ц</A>
+        <A onclick="populate_partticipants_list(false,'Ч'); $('.search_icon').click();">Ч</A>
+        <A onclick="populate_partticipants_list(false,'Ш'); $('.search_icon').click();">Ш</A>
+        <A onclick="populate_partticipants_list(false,'Щ'); $('.search_icon').click();">Щ</A>
+        <A onclick="populate_partticipants_list(false,'Ю'); $('.search_icon').click();">Ю</A>
+        <A onclick="populate_partticipants_list(false,'Я'); $('.search_icon').click();">Я</A>
+    </div>
+
+</div>
+
+
+<img src="images/print-icon.svg" class="print_icon">
+<img src="images/back-icon.svg" class="back_icon">
+
+<img src="images/exhibition-logo-start.png" class="exhibition_logo">
+
+<div class="left_menu">
+    <a>EXHIBITORS</a>
+        <a>Ppdgdgrhrhrth. Erthrh. Fhrfhtrf</a>
+        <a>Ppdgdgrhrhrth. Erthrh. Fhrfhtrf</a>
+        <a>Ppdgdgrhrhrth. Erthrh. Fhrfhtrf</a>
+        <a>Ppdgdgrhrhrth. Erthrh. Fhrfhtrf</a>
+        <a>Ppdgdgrhrhrth. Erthrh. Fhrfhtrf</a>
+    <a>PRESS</a>
+    <a>ORGANIZERS</a>
+</div>
+
+
+
+<div class="participants_list" STYLE="DISPLAY:NONE;">
+	<div class="search_result" STYLE="DISPLAY:NONE;">На жаль, по вашому запиту нічого не знайдено</div>
+    <div class="vertical_dotted_line">
+
+        <a class="participant" >EL-MIRA TM</a>
+
+    </div>
+    <!--<div class="vertical_dotted_line_margin_bottom"> &nbsp;</div>-->
+</div>
+
+
+<div class="participant_entry" STYLE="DISPLAY:NONE;">
+    <div class="participant_entry_hide_scroll">
+        <div class="name">EL-MIRA TM</div>
+        <div class="logo"></div>
+        <div class="address">29000, 2 Hospitalna St., Suite 2,<br/>Khmelnitsky, Khmelnitskaya, Ukraine</div>
+        <div class="phone">+38 093 75 07 971<br/>+38 096 49 05 709</div>
+        <div class="email">elmira.original@gmail.com</div>
+        <div class="web">www.el-mira.com.ua</div>
+        <div class="desc">EL-Mira- is a manufacturer of exclusive luxury women`s clothing at reasonable prices.
+            EL-Mira - is an island of bright and unusual style in the world of monotony.
+            We offer a plunge into the world of sensuality, romanticism and elegance.</div>
+    </div>
+</div>
+
+
+</body>
+</html>

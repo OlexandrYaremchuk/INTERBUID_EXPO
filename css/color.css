@@ -1,0 +1,36 @@
+body, .participant_entry .name, .participant_entry .desc
+{
+	//background-color: #fff;
+}
+
+.left_menu > a:hover,
+.left_menu > a:first-child, .left_menu > a:nth-child(2), .left_menu > a:last-child, .left_menu > a:nth-last-child(2)
+{
+    color: #fff;
+}
+.participant 
+{
+    color: #974695;
+}
+.participant_entry .name,
+{
+    color: #22839d;
+}
+
+.participant_entry .web a
+{
+    color: #974695;
+}
+
+
+.search_button,
+.lang_submit
+{
+	background-color: #974695;
+}
+
+.vertical_dotted_line:after
+{
+	border-left-color: #974695;
+}
+
